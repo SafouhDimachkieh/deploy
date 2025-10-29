@@ -40,7 +40,7 @@ jobs:
           zip -r deploy_package.zip . -x "*.git*" "*.github*"
 
       - name: Upload deploy artifact
-        uses: actions/upload-artifact@v3
+        uses: actions/upload-artifact@v4
         with:
           name: laravel-deploy
           path: deploy_package.zip
